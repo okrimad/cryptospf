@@ -68,7 +68,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 
 # In production...
-group :productions do
-  #gem 'pg'
-  gem 'rails_12factor', '~> 0.0.3'
-end
+#group :productions do
+#  gem 'pg'
+#  gem 'rails_12factor', '~> 0.0.3'
+#end
