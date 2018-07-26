@@ -69,6 +69,6 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 
 # In production...
 group :productions do
-  gem 'pg'
-  #gem 'rails_12factor', '~> 0.0.3'
+  #gem 'pg'
+  gem 'rails_12factor', '~> 0.0.3'
 end
