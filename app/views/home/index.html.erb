@@ -1,0 +1,42 @@
+<h1>Hello World!</h1>
+<p>This is my first Rails App</p>
+<br/><br/>
+
+<% if false %>
+  < % = ... output to the screen
+
+  Ruby hash = Python dictionary = JS object
+  "Key" => "value" - pairs
+  Call the key => output the value
+
+  {
+    "id"=>"bitcoin",
+    "name"=>"Bitcoin",
+    "symbol"=>"BTC",
+    "rank"=>"1",
+    "price_usd"=>"7759.13",
+    "price_btc"=>"1.0",
+    "24h_volume_usd"=>"5135960000.0", 
+    "market_cap_usd"=>"133202629646",
+    "available_supply"=>"17167212.0", 
+    "total_supply"=>"17167212.0", 
+    "max_supply"=>"21000000.0",
+    "percent_change_1h"=>"0.31",
+    "percent_change_24h"=>"1.62",
+    "percent_change_7d"=>"15.48",
+    "last_updated"=>"1532405125"
+  }
+<% end %>
+
+<% @coins %>
+
+<% for x in @coins %>
+  <% for coin in @my_coins %>
+    <% if coin == x["symbol"] %>
+      <%= x["name"] %>: $<%= x["price_usd"] %><br/>
+      Rank: <%= x["rank"] %><br/><br/>
+    <% end %>
+  <% end %>
+<% end %>
+
+<br/>
